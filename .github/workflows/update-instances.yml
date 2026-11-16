@@ -1,0 +1,41 @@
+name: Update Invidious instances
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-invidious-instances
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Discover and test instances
+        run: python scripts/update_instances.py
+
+      - name: Commit updated JSON
+        run: |
+          if git diff --quiet -- instances.json; then
+            echo "instances.json is unchanged"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add instances.json
+          git commit -m "chore: refresh working Invidious instances"
+          git push
