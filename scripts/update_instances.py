@@ -19,6 +19,7 @@ from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
 
+SOURCE_LIST = "https://raw.githubusercontent.com/kuru-bana/yt-data/refs/heads/main/invidious/data/invidious.json"
 API_LIST = "https://api.invidious.io/instances.json?sort_by=health"
 DOCS_LIST = "https://docs.invidious.io/instances/"
 SELF_HOSTED = ["https://invidious.ritoge.com"]
@@ -28,7 +29,7 @@ TEST_VIDEO_IDS = [
 ]
 USER_AGENT = "invidious-watch/1.0 (+https://github.com/train233kei/invidious-watch)"
 TIMEOUT = 12
-MAX_INSTANCES = 100
+MAX_INSTANCES = 250
 
 
 def get(url: str):
@@ -69,6 +70,22 @@ class LinkParser(HTMLParser):
 
 def discover() -> list[str]:
     found: list[str] = []
+
+    # Primary candidate source supplied by the project owner. Its schema is
+    # {"count": N, "instances": ["https://...", ...]}.
+    try:
+        _, _, body = get(SOURCE_LIST)
+        data = json.loads(body)
+        entries = data.get("instances", []) if isinstance(data, dict) else []
+        if isinstance(entries, list):
+            for item in entries:
+                base = normalize_base(item)
+                if base:
+                    found.append(base)
+        print(f"Primary source supplied {len(entries)} entries")
+    except Exception as exc:
+        print(f"Primary candidate source failed: {exc}")
+
     try:
         _, _, body = get(API_LIST)
         data = json.loads(body)
