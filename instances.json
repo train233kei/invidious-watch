@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T04:02:14Z",
+  "generated_at": "2026-11-20T05:12:09Z",
   "check_interval_minutes": 60,
   "candidate_count": 111,
   "healthy_count": 3,
@@ -19,15 +19,15 @@
   "instances": [
     {
       "url": "https://yt.chocolatemoo53.com",
-      "latency_ms": 790,
+      "latency_ms": 692,
       "test_video_id": "aqz-KE-bpKQ",
-      "stream_count": 33,
+      "stream_count": 42,
       "version": "2026.11.19-c82d8a6",
       "playback_ratio": null
     },
     {
       "url": "https://invidious.ritoge.com",
-      "latency_ms": 1570,
+      "latency_ms": 2353,
       "test_video_id": "dQw4w9WgXcQ",
       "stream_count": 27,
       "version": "2026.11.14-9a5c91cf",
@@ -35,7 +35,7 @@
     },
     {
       "url": "https://iv.catgirl.cloud",
-      "latency_ms": 1788,
+      "latency_ms": 2938,
       "test_video_id": "dQw4w9WgXcQ",
       "stream_count": 28,
       "version": "2026.10.22-af3214a1-custom",
