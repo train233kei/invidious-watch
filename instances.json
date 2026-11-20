@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T12:09:25Z",
+  "generated_at": "2026-11-20T13:24:14Z",
   "check_interval_minutes": 60,
   "candidate_count": 104,
   "healthy_count": 2,
@@ -18,15 +18,15 @@
   "instances": [
     {
       "url": "https://invidious.ritoge.com",
-      "latency_ms": 1879,
-      "test_video_id": "aqz-KE-bpKQ",
-      "stream_count": 37,
+      "latency_ms": 1825,
+      "test_video_id": "dQw4w9WgXcQ",
+      "stream_count": 27,
       "version": "2026.11.14-9a5c91cf",
       "playback_ratio": null
     },
     {
       "url": "https://iv.catgirl.cloud",
-      "latency_ms": 2134,
+      "latency_ms": 2015,
       "test_video_id": "dQw4w9WgXcQ",
       "stream_count": 28,
       "version": "2026.10.22-af3214a1-custom",
