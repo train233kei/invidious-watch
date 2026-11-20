@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-20T11:15:50Z",
+  "generated_at": "2026-11-20T12:09:25Z",
   "check_interval_minutes": 60,
-  "candidate_count": 111,
+  "candidate_count": 104,
   "healthy_count": 2,
   "test_video_ids": [
     "aqz-KE-bpKQ",
@@ -10,26 +10,26 @@
   "endpoints": {
     "video": {
       "working_instances": [
-        "https://iv.catgirl.cloud",
-        "https://invidious.ritoge.com"
+        "https://invidious.ritoge.com",
+        "https://iv.catgirl.cloud"
       ]
     }
   },
   "instances": [
     {
-      "url": "https://iv.catgirl.cloud",
-      "latency_ms": 2295,
-      "test_video_id": "dQw4w9WgXcQ",
-      "stream_count": 28,
-      "version": "2026.10.22-af3214a1-custom",
-      "playback_ratio": null
-    },
-    {
       "url": "https://invidious.ritoge.com",
-      "latency_ms": 8039,
+      "latency_ms": 1879,
       "test_video_id": "aqz-KE-bpKQ",
       "stream_count": 37,
       "version": "2026.11.14-9a5c91cf",
+      "playback_ratio": null
+    },
+    {
+      "url": "https://iv.catgirl.cloud",
+      "latency_ms": 2134,
+      "test_video_id": "dQw4w9WgXcQ",
+      "stream_count": 28,
+      "version": "2026.10.22-af3214a1-custom",
       "playback_ratio": null
     }
   ],
