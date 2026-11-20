@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T20:10:28Z",
+  "generated_at": "2026-11-20T21:00:47Z",
   "check_interval_minutes": 60,
   "candidate_count": 104,
   "healthy_count": 1,
@@ -17,7 +17,7 @@
   "instances": [
     {
       "url": "https://iv.catgirl.cloud",
-      "latency_ms": 1656,
+      "latency_ms": 2352,
       "test_video_id": "dQw4w9WgXcQ",
       "stream_count": 28,
       "version": "2026.10.22-af3214a1-custom",
