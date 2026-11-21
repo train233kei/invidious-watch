@@ -172,7 +172,8 @@ def check_instance(base: str) -> dict | None:
 
         for video_id in TEST_VIDEO_IDS:
             query = urllib.parse.urlencode({
-                "fields": "videoId,formatStreams,adaptiveFormats,hlsUrl"
+                "fields": "videoId,formatStreams,adaptiveFormats,hlsUrl",
+                "local": "true",
             })
             try:
                 video_status, _, video_body = get(f"{base}/api/v1/videos/{video_id}?{query}")
