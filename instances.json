@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T21:07:48Z",
+  "generated_at": "2026-11-27T22:07:06Z",
   "check_interval_minutes": 60,
   "candidate_count": 111,
   "healthy_count": 2,
@@ -19,7 +19,7 @@
   "instances": [
     {
       "url": "https://yt.chocolatemoo53.com",
-      "latency_ms": 820,
+      "latency_ms": 932,
       "test_video_id": "aqz-KE-bpKQ",
       "stream_count": 33,
       "verified_stream": {
@@ -33,9 +33,9 @@
     },
     {
       "url": "https://y.com.sb",
-      "latency_ms": 4040,
-      "test_video_id": "dQw4w9WgXcQ",
-      "stream_count": 27,
+      "latency_ms": 2868,
+      "test_video_id": "aqz-KE-bpKQ",
+      "stream_count": 37,
       "verified_stream": {
         "http_status": 206,
         "bytes_received": 1024,
@@ -43,7 +43,7 @@
         "format": "video/mp4; codecs=\"avc1.42001E, mp4a.40.2\""
       },
       "version": "2026.11.14-4e9d20d",
-      "playback_ratio": 0.0
+      "playback_ratio": 1.0
     }
   ],
   "notice": "A passing check confirms that a test video's media URL returned bytes from the GitHub Actions runner at check time. It does not guarantee every video or playback from every client network."
