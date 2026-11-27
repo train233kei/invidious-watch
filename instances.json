@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-27T04:17:28Z",
+  "generated_at": "2026-11-27T05:25:04Z",
   "check_interval_minutes": 60,
   "candidate_count": 111,
-  "healthy_count": 2,
+  "healthy_count": 1,
   "test_video_ids": [
     "aqz-KE-bpKQ",
     "dQw4w9WgXcQ"
@@ -11,17 +11,16 @@
   "endpoints": {
     "video": {
       "working_instances": [
-        "https://y.com.sb",
-        "https://yt.chocolatemoo53.com"
+        "https://y.com.sb"
       ]
     }
   },
   "instances": [
     {
       "url": "https://y.com.sb",
-      "latency_ms": 2040,
-      "test_video_id": "aqz-KE-bpKQ",
-      "stream_count": 37,
+      "latency_ms": 1449,
+      "test_video_id": "dQw4w9WgXcQ",
+      "stream_count": 27,
       "verified_stream": {
         "http_status": 206,
         "bytes_received": 1024,
@@ -30,20 +29,6 @@
       },
       "version": "2026.11.14-4e9d20d",
       "playback_ratio": 1.0
-    },
-    {
-      "url": "https://yt.chocolatemoo53.com",
-      "latency_ms": 3100,
-      "test_video_id": "aqz-KE-bpKQ",
-      "stream_count": 33,
-      "verified_stream": {
-        "http_status": 206,
-        "bytes_received": 1024,
-        "content_type": "audio/mp4",
-        "format": "audio/mp4; codecs=\"mp4a.40.5\""
-      },
-      "version": "2026.11.19-c82d8a6",
-      "playback_ratio": null
     }
   ],
   "notice": "A passing check confirms that a test video's media URL returned bytes from the GitHub Actions runner at check time. It does not guarantee every video or playback from every client network."
