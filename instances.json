@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T04:06:28Z",
+  "generated_at": "2026-11-28T06:11:00Z",
   "check_interval_minutes": 60,
   "candidate_count": 111,
   "healthy_count": 1,
@@ -18,7 +18,7 @@
   "instances": [
     {
       "url": "https://yt.chocolatemoo53.com",
-      "latency_ms": 875,
+      "latency_ms": 1305,
       "test_video_id": "aqz-KE-bpKQ",
       "stream_count": 33,
       "verified_stream": {
